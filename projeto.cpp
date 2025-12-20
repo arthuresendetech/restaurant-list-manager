@@ -722,8 +722,22 @@ void insercaoOrdenada(restaurante *&vetor, int &m, int &n, string ordenamento) {
 
   restaurante registrando = vetor[m - 1];
   int posicao = m - 1;
-
-  posicao = BuscaBinaria(vetor, 0, m - 1, registrando.nome, ordenamento, true);
+  
+  if (ordenamento == "nome") {
+    posicao = BuscaBinaria(vetor, 0, m - 1, registrando.nome, ordenamento, true);
+  }
+  else if (ordenamento == "chef") {
+    posicao = BuscaBinaria(vetor, 0, m - 1, registrando.chef, ordenamento, true);
+  }
+   else if (ordenamento == "endereco") {
+    posicao = BuscaBinaria(vetor, 0, m - 1, registrando.endereco, ordenamento, true);
+  }
+   else if (ordenamento == "ano") {
+    posicao = BuscaBinaria(vetor, 0, m - 1, to_string(registrando.anoDeFundacao), ordenamento, true);
+  }
+   else if (ordenamento == "estrelas") {
+    posicao = BuscaBinaria(vetor, 0, m - 1, to_string(registrando.estrelas), ordenamento, true);
+  }
   
   for (int i = m - 1; i > posicao; i--) {
     vetor[i] = vetor[i - 1];
