@@ -1,5 +1,5 @@
 Restaurantes_ano_atualizado
-Restaurante;Endereco;Estrelas;Chef;AnoDeFundacao;Obs
+Restaurante,Endereco,Estrelas,Chef,AnoDeFundacao,Obs
 Yoshinori,6º arr.,1,Yoshinori Morisue,2017,Combinação harmoniosa entre precisão japonesa e gastronomia francesa.
 Abri,10º arr.,1,Katsuaki Okiyama,2008,Famoso pela fusão franco-japonesa e o lendário sanduíche de segunda-feira.
 Virtus,12º arr.,1,Chiho Kanzaki & Marc Cordonnier,2017,Par franco-japonês, cozinha elegante e harmoniosa.
