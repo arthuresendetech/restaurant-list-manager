@@ -507,8 +507,7 @@ void leituraDeLinha(restaurante *&vetor, string linha, int &m) {
 void lerArquivo(restaurante *&vetor, int &m, int &n, ifstream &entrada) {
   string linha;
 
-  // pula titulo e cabecalo
-  getline(entrada, linha);
+  // pula cabecalho
   getline(entrada, linha);
 
   while (getline(entrada, linha)) {
@@ -617,7 +616,6 @@ void registrarRestaurante(restaurante *&vetor, int &m) {
 // FUNCAO PARA ESCREVER E SALVAR EM ARQUIVO .CSV
 void escritaDeArquivo(restaurante vetor[], int m) {
   ofstream saida("restaurantes.csv");
-  saida << "Restaurantes_ano_atualizado\n";
   saida << "Restaurante,Endereco,Estrelas,Chef,AnoDeFundacao,Obs\n";
   for (int i = 0; i < m; i++) {
     if (vetor[i].ativo) {
