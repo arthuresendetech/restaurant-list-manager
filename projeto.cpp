@@ -618,7 +618,7 @@ void registrarRestaurante(restaurante *&vetor, int &m) {
 void escritaDeArquivo(restaurante vetor[], int m) {
   ofstream saida("restaurantes.csv");
   saida << "Restaurantes_ano_atualizado\n";
-  saida << "Restaurante;Endereco;Estrelas;Chef;AnoDeFundacao;Obs\n";
+  saida << "Restaurante,Endereco,Estrelas,Chef,AnoDeFundacao,Obs\n";
   for (int i = 0; i < m; i++) {
     if (vetor[i].ativo) {
       saida << vetor[i].nome << ',' << vetor[i].endereco << ','
